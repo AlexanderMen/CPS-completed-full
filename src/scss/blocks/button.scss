@@ -1,0 +1,85 @@
+.button {
+	padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+	cursor: pointer;
+}
+
+.button:active,
+.button:focus {
+	outline: none;
+}
+
+.button__deploy {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	color: $mainTextColor;
+	transition: 0.4s;
+}
+
+.button__deploy:hover {
+	opacity: 0.5;
+}
+
+.button__deploy::before {
+		content: url(../img/icon.svg);
+		padding-right: 16px;
+	}
+
+.button__deploy--hidden {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.button__deploy--hidden {
+		display: inline-block;
+		margin-bottom: 32px;
+	}
+}
+
+.button__deploy--reverse::before {
+	content: url(../img/icon-reverse.svg);
+	padding-right: 17px;
+}
+
+.button--oval {
+	height: 32px;
+	width: 119px;
+	padding-left: 10px;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: left;
+	letter-spacing: -0.15px;
+	color: $menuItemBg;
+	text-transform: uppercase;
+	border: 2px solid $headerAndMenuButtonsColor;
+	border-radius: 20px;
+	background: url(../img/dropdownWhite.svg) no-repeat 85% $headerAndMenuButtonsColor;
+	transition: 0.35s;
+}
+
+.button--oval:hover {
+	box-shadow: 0 0 4px 2px black;
+	opacity: 0.7;
+}
+
+.button__commertial-proposal {
+	position: relative;
+}
+
+.button__commertial-proposal::before {
+		content: url(../img/line.svg);
+		position: absolute;
+		right: -11%;
+	}
+
+
+
+
+
+
+
+

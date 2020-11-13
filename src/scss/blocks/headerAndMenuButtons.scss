@@ -1,0 +1,123 @@
+.headerAndMenuButtons {
+	margin-left: 16px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background: $headerAndMenuButtonsColor;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 0.5s;
+}
+	
+.headerAndMenuButtons--hidden {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.headerAndMenuButtons--hidden {
+		display: inline-block;
+	}
+}
+
+.headerAndMenuButtons--close {
+	background-image: url(../img/close.svg);
+	margin-left: 0;
+}
+
+.headerAndMenuButtons--close:hover {
+	transform: rotate(180deg);
+	opacity: 0.5;
+}
+
+.headerAndMenuButtons--search {
+	background-image: url(../img/search.svg);
+}
+
+.headerAndMenuButtons--search:hover {
+	transform: scale(2);
+	opacity: 0.5;
+}
+
+.headerAndMenuButtons--call {
+	background-image: url(../img/call.svg);
+}
+
+.headerAndMenuButtons--call:hover {
+	animation-name: rotation;
+  animation-duration: 0.5s;
+	filter: contrast(2);
+}
+
+@keyframes rotation {
+  0% {
+   transform: rotate(0deg);
+  	}
+	25% {
+   transform: rotate(35deg)  scale(1.4);
+  	}
+  50% {
+   transform: rotate(-35deg)  scale(1.4);
+  	}
+	75% {
+   transform: rotate(35deg)  scale(1.4);
+  	}
+	100% {
+   transform: rotate(0deg);
+  	}
+	}
+
+.headerAndMenuButtons--burger,
+.headerAndMenuButtons--repair,
+.headerAndMenuButtons--checkstatus {
+	transition: 0.35s;
+}
+
+.headerAndMenuButtons--burger:hover,
+.headerAndMenuButtons--repair:hover,
+.headerAndMenuButtons--checkstatus:hover {
+	box-shadow: 0 0 4px 2px;
+}
+
+.headerAndMenuButtons--burger {
+	background-image: url(../img/burger.svg);
+	margin: 0;
+}
+
+.headerAndMenuButtons--chat {
+	background-image: url(../img/chat.svg);
+}
+
+.headerAndMenuButtons--chat:hover {
+	filter: blur(2px);
+	transform: scale(0.8);
+}
+
+.headerAndMenuButtons--profile {
+	background-image: url(../img/profile.svg);
+}
+
+.headerAndMenuButtons--profile:hover {
+	filter: drop-shadow(1px 1px 4px black);
+}
+
+.headerAndMenuButtons--repair {
+	background-image: url(../img/repair.svg);
+}
+
+.headerAndMenuButtons--checkstatus {
+	background-image: url(../img/checkstatus.svg);
+}
+
+.headerAndMenuButtons--dividerBefore {
+	position: relative;
+	margin-left: 42px;
+}
+
+.headerAndMenuButtons--dividerBefore::before {
+	content: url(../img/devider.svg);
+	position: absolute;
+	top: 50%;
+	left: -21px;
+	transform: translateY(-45%);
+}
+

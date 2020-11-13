@@ -1,0 +1,135 @@
+.modal-menuFeedback {
+	position: absolute;
+	top: -700px;
+	right: 50%;
+	transform: translateX(50%);
+	width: 320px;
+	z-index: 102;
+	padding: 24px 16px 75px;
+	background-color: $menuItemBg;
+	box-sizing: border-box;
+	transition: 0.65s;
+	
+	.modal-menuFeedback__headerAndMenuButtons-container {
+		position: relative;
+		margin-bottom: 32px;
+	}
+	
+	@media screen and (min-width: 1366px) {
+		.modal-menuFeedback__buttonClose {
+			position: absolute;
+			top: 25px;
+			left: -97px;
+		}
+	}
+	
+	.modal-menuFeedback__h2 {
+		position: relative;
+		font-family: 'TT Lakes Bold';
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: -0.6px;
+		margin: 0 0 24px 0;
+	}
+	
+	.modal-menuFeedback__h2::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: -16px;
+		height: 40px;
+		width: 4px;
+		background: $menuItemActiveMarker;
+		transform: matrix(-1, 0, 0, 1, 0, 0);
+	}
+	
+	@media screen and (min-width: 1366px) {
+		.modal-menuFeedback__h2::before {
+			left: -32px;
+		}
+	}
+	
+	.modal-menuFeedback__form {
+		margin-bottom: 16px;
+	}
+	
+	.modal-menuFeedback__input,
+	.modal-menuFeedback__textarea {
+		width: 100%;
+		height: 48px;
+		margin-bottom: 16px;
+		padding-left: 16px;
+		box-sizing: border-box;
+		border: 1px solid $swiperSlideBorder;
+		border-radius: 8px;
+		font-family: 'TT Lakes Regular';
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+	}
+	
+	.modal-menuFeedback__input:focus,
+	.modal-menuFeedback__textarea:focus {
+		outline: none;
+	}
+	
+	.modal-menuFeedback__textarea {
+		height: 118px;
+		margin-bottom: 0;
+		padding-top: 12px;
+		resize: none;
+	}
+	
+	.modal-menuFeedback__agreement {
+		margin: 0 0 19px;
+		line-height: 16px;
+		letter-spacing: 0;
+	}
+	
+	.modal-menuFeedback__agreement--attention {
+		color: $headerAndMenuButtonsColor;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	
+	.modal-menuFeedback__agreement--attention:hover {
+		opacity: 0.6;
+	}
+	
+	.modal-menuFeedback__button {
+		position: relative;
+		left: 168px;
+	}
+	
+	@media screen and (min-width: 1366px) {
+		.modal-menuFeedback__button {
+			left: 255px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.modal-menuFeedback {
+		right: 0;
+		transform: translateX(0);
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.modal-menuFeedback {
+		width: 440px;
+		padding: 40px 32px;
+	}
+}
+
+.modal-menuFeedback--active {
+	top: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.modal-menuFeedback--active {
+		right: 0;
+		transform: translateX(0);
+	}
+}
+

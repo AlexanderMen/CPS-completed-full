@@ -1,0 +1,33 @@
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.menu__item {
+	display: flex;
+	list-style: none;
+}
+
+.menu__link {
+	text-decoration: none;
+	display: flex;
+}
+
+.menu__item--bordered {
+	flex-shrink: 0;
+	padding: 8px 16px;
+	margin-right: 16px;
+}
+
+.menu__item--bordered:focus,
+.menu__item--bordered:hover {
+	flex-shrink: 0;
+	background: $menuItemBg;
+	border: 2px solid $menuItemHoverBorder;
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding: 6px 14px;
+}
+

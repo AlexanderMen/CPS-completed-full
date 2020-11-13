@@ -1,0 +1,43 @@
+.header {
+	display: flex;
+	width: 100%;
+	border-bottom: $sectionDivider 1px solid;
+	justify-content: space-between;
+	
+	.header__group-of-buttons {
+		display: flex;
+		padding: 17px 24px 17px 16px;
+		align-items: center;
+	}
+	
+	@media screen and (min-width: 768px) {
+	
+		.header__group-of-buttons {
+			padding-left: 24px;
+		}
+	}
+	
+	.header__logo-container {
+		position: relative;
+		margin-left: 16px;
+	}
+	
+	@media screen and (min-width: 768px) {
+		.header__logo-container {
+			margin-left: 42px;
+		}
+		.header__logo-container::after {
+			content: url(../img/devider.svg);
+			position: absolute;
+			top: 50%;
+			left: -21px;
+			transform: translateY(-45%);
+		}
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.header {
+		display: none;
+	}
+}

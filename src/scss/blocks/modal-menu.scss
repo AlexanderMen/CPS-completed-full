@@ -1,0 +1,214 @@
+.modal-menu {
+	position: absolute;
+	top: 0;
+	left: -450px;
+	z-index: 100;
+	min-width: 320px;
+	margin: 0;
+  padding: 19px 16px 32px;
+  font-family: 'TT Lakes Regular';
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	background-color: $menuItemBg;
+	transition: 0.65s;
+	box-sizing: border-box;
+
+	.modal-menu__headerAndMenuContainer {
+		width: 100%;
+	}
+
+	.modal-menu__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0;
+		margin-bottom: 26px;
+	}
+	
+	@media screen and (min-width: 768px) {
+		.modal-menu__header {
+			margin-bottom: 50px;
+		}
+	}
+	
+	@media screen and (min-width: 1366px) {
+		.modal-menu__header {
+			margin-bottom: 37px;
+		}
+	}
+	
+	.modal-menu__headerAndMenuButtons-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.modal-menu__logo {
+		margin-left: 17px;
+	}
+	
+	@media screen and (min-width: 1366px) {
+		.modal-menu__logo {
+			margin-left: 0;
+		}
+	}
+
+	.modal-menu__list {
+		margin: 0 0 32px 0;
+		padding: 0;
+	}
+
+	.modal-menu__item {
+		margin: 0 0 24px 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	@media screen and (min-width: 768px) {
+		.modal-menu__item {
+			margin-bottom: 32px;
+		}
+	}
+	
+	@media screen and (min-width: 1366px) {
+		.modal-menu__item {
+			margin-bottom: 28px;
+		}
+	}
+
+	.modal-menu__link {
+		text-decoration: none;
+		color: $mainTextColor;
+	}
+	
+	.modal-menu__link:hover {
+		color: $mainMenuTextColor;
+	}
+
+	.modal-menu__link--active {
+		position: relative;
+		color: $mainMenuTextColor;
+	}
+
+	.modal-menu__link--active::before {
+		content: '';
+		position: absolute;
+		top: -10px;
+		left: -16px;
+		height: 40px;
+		width: 4px;
+		background: $menuItemActiveMarker;
+		transform: matrix(-1, 0, 0, 1, 0, 0);
+	}
+	
+	@media screen and (min-width: 360px) {
+		.modal-menu__link--active::before {
+			left: -24px;
+		}
+	}
+
+	.modal-menu__buttons-container {
+		margin: 0 0 16px 0;
+	}
+
+	.modal-menu__headerAndMenuButtons {
+		margin-right: 16px;
+		margin-left: 0;
+	}
+	
+	@media screen and (min-width: 1366px) {
+		.modal-menu__headerAndMenuButtons--hidden {
+			display: none;
+		}
+	}
+
+	.modal-menu__email,
+	.modal-menu__tel {
+		display: block;
+		color: $mainTextColor;
+		text-decoration: none;
+	}
+
+	.modal-menu__email {
+		margin-bottom: 12px;
+	}
+	
+	.modal-menu__email:hover,
+	.modal-menu__tel:hover,
+	.modal-menu__lang-item:hover {
+		color: $mainMenuTextColor;
+	}
+
+	.modal-menu__tel {
+		font-family: 'TT Lakes Bold';
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: -0.6px;
+		margin-bottom: 8px;
+	}
+	
+	@media screen and (min-width: 768px) {
+		.modal-menu__tel {
+			margin-bottom: 40px;
+		}
+	}
+
+	.modal-menu__lang-container {
+		margin-right: 32px;
+	}
+
+	.modal-menu__lang-item {
+		margin-left: 7px;
+		cursor: pointer;
+	}
+
+	.modal-menu__lang-item--active {
+		color: $mainMenuTextColor;
+	}
+}
+
+@media screen and (min-width: 360px) {
+	.modal-menu {
+		width: 360px;
+		padding: 19px 24px 32px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.modal-menu {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
+		width: 320px;
+		height: 100%;
+		box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.modal-menu,
+	.modal-menu--active {
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		padding-right: 31px;
+		box-shadow: none;
+	}
+}
+
+.modal-menu--active {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+	.modal-menu--active {
+		left: 0;
+		transform: translateX(0);
+	}
+}
+
+
+
+
