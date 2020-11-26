@@ -29,6 +29,9 @@ function getModalMenu() {
 			overflowHiddenElem.classList.add('blur-wrapper--overflow-hidden');
 			if (e.target == openButtons.modalmenuFeedbackBtn || e.target == openButtons.modalmenuCallBtn) {
 				modalMenues[0].classList.remove('modal-menu--active');
+				if (window.innerWidth >= 1366) {
+					modalMenues[0].classList.add('modal-menu--blured');
+				}
 			}
 		})
 	}
@@ -44,6 +47,7 @@ function getModalMenu() {
 			}
 			blurElem.classList.remove('blur-wrapper--blured');
 			overflowHiddenElem.classList.remove('blur-wrapper--overflow-hidden');
+			modalMenues[0].classList.remove('modal-menu--blured');
 		})
 	}
 }
