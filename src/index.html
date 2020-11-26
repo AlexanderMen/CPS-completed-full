@@ -9,67 +9,67 @@
 </head>
 <body>
 
- <div class="header-main-footer-container">
-	<header class="header">
+ <div class="header-main-footer-wrapper">
+	<header class="header header-main-footer-wrapper__out-wrapper header__top-margin">
 		<div class="header__group-of-buttons">
-			<button class="headerAndMenuButtons headerAndMenuButtons--burger button" type="button"></button>
-			<div class="header__logo-container">
+			<button class="primary-buttons primary-buttons--burger primary-buttons--header-btn button" type="button"></button>
+			<div class="header__logo-wrapper">
 				<img class="header__logo" src="img/Group.svg" alt="Логотип CPS">
 			</div>
 		</div>
 		<div class="header__group-of-buttons">
-			<button class="headerAndMenuButtons headerAndMenuButtons--call headerAndMenuButtons--hidden button" type="button"></button>
-			<button class="headerAndMenuButtons headerAndMenuButtons--chat headerAndMenuButtons--hidden button" type="button"></button>
-			<button class="headerAndMenuButtons headerAndMenuButtons--profile headerAndMenuButtons--hidden button" type="button"></button>
-			<button class="headerAndMenuButtons headerAndMenuButtons--repair headerAndMenuButtons--dividerBefore button" type="button"></button>
-			<button class="headerAndMenuButtons headerAndMenuButtons--checkstatus button" type="button"></button>
+			<button class="primary-buttons primary-buttons--call primary-buttons--hidden primary-buttons--header-btn button" type="button"></button>
+			<button class="primary-buttons primary-buttons--chat primary-buttons--hidden primary-buttons--header-btn button" type="button"></button>
+			<button class="primary-buttons primary-buttons--profile primary-buttons--hidden primary-buttons--header-btn button" type="button"></button>
+			<button class="primary-buttons primary-buttons--repair primary-buttons--dividerBefore primary-buttons--header-btn button" type="button"></button>
+			<button class="primary-buttons primary-buttons--checkstatus primary-buttons--header-btn button" type="button"></button>
 		</div>
    </header>
 
    <main class="main">
 		<h1 class="main__header">Услуги и сервисы</h1>
-		<div class="main__buttons-container">
+		<div class="main__buttons-wrapper">
 			<div class="main__button">
-				<span class="main__button-text">Оставить заявку </span><button class="headerAndMenuButtons headerAndMenuButtons--repair button" type="button"></button>
+				<span class="main__button-text">Оставить заявку </span><button class="primary-buttons primary-buttons--header-btn primary-buttons--repair button" type="button"></button>
 			</div>
 			<div class="main__button">
-				<span class="main__button-text">Статус ремонта </span><button class="headerAndMenuButtons headerAndMenuButtons--checkstatus button" type="button"></button>
+				<span class="main__button-text">Статус ремонта </span><button class="primary-buttons primary-buttons--header-btn primary-buttons--checkstatus button" type="button"></button>
 			</div>
 		</div>
-		<ul class="main__menu menu">
-			<li class="menu__item menu__item--bordered">
+		<nav class="main__menu menu">
+			<div class="menu__item menu__item--bordered">
 				<a class="menu__link">
 					Ремонтируемые бренды
 				</a>
-			</li>
-			<li class="menu__item menu__item--bordered">
+			</div>
+			<div class="menu__item menu__item--bordered">
 				<a class="menu__link">
 					Ремонтируемые устройства
 				</a>
-			</li>
-			<li class="menu__item menu__item--bordered">
+			</div>
+			<div class="menu__item menu__item--bordered">
 				<a class="menu__link">
 					Цены на услуги
 				</a>
-			</li>
-			<li class="menu__item menu__item--bordered">
+			</div>
+			<div class="menu__item menu__item--bordered">
 				<a class="menu__link">
 					Адреса сервисных центров
 				</a>
-			</li>
-			<li class="menu__item menu__item--bordered">
+			</div>
+			<div class="menu__item menu__item--bordered">
 				<a class="menu__link">
 					Специальные цены
 				</a>
-			</li>
-			<li class="menu__item menu__item--bordered">
+			</div>
+			<div class="menu__item menu__item--bordered">
 				<a class="menu__link">
 					Отзывы
 				</a>
-			</li>
-		</ul>
+			</div>
+		</nav>
 		<section class="main__about-company about-company">
-			<div class="about-company__container">
+			<div class="about-company__wrapper">
 				<p class="about-company__text">
 					Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 				</p>
@@ -78,65 +78,67 @@
 				</p>
 				<button class="button button__deploy">Читать далее</button>
 			</div>
-			<div class="about-company__container">
+			<div class="about-company__wrapper">
 				<img class="about-company__cps-img" src="img/cps-img.jpg" alt="cps-офис">
 			</div>
 		</section>
 		
-<!-- Блок 1.5 (swiper.html) -->
+<!-- Блок 1.5 (swiper) -->
 		
-		<div class="main__modal-container modal-container modal-swiper">
+		<div class="main__modal-wrapper modal-wrapper modal-swiper">
 	
-			<h3 class="modal-container__header">Ремонт техники различных брендов</h3>
+			<h3 class="modal-wrapper__header">
+				<span class="modal-wrapper__header-span">Ремонт техники различных брендов</span>
+			</h3>
 
-			<div class="modal-container__swiper-container swiper-container">
-				<div class="swiper-container__swiper-wrapper swiper-container__swiper-wrapper--hidden swiper-wrapper">
-					<div class="swiper-container__swiper-slide swiper-slide">
-						<img class="swiper-container__img" src="img/repairMarks/Lenovo.svg" alt="Логотип Lenovo">
-						<button class="swiper-container__button button" type="button"></button>
+			<div class="modal-wrapper__swiper-outer-wrapper swiper-outer-wrapper swiper-container">
+				<div class="swiper-outer-wrapper__swiper-wrapper swiper-outer-wrapper__swiper-wrapper--hidden swiper-wrapper">
+					<div class="swiper-outer-wrapper__swiper-slide swiper-slide">
+						<img class="swiper-outer-wrapper__img" src="img/repairMarks/Lenovo.svg" alt="Логотип Lenovo">
+						<button class="swiper-outer-wrapper__button button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-slide">
-						<img class="swiper-container__img" src="img/repairMarks/Samsung.svg" alt="Логотип Samsung">
-						<button class="swiper-container__button button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-slide">
+						<img class="swiper-outer-wrapper__img" src="img/repairMarks/Samsung.svg" alt="Логотип Samsung">
+						<button class="swiper-outer-wrapper__button button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-slide">
-						<img class="swiper-container__img" src="img/repairMarks/Apple.svg" alt="Логотип Apple">
-						<button class="swiper-container__button button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-slide">
+						<img class="swiper-outer-wrapper__img" src="img/repairMarks/Apple.svg" alt="Логотип Apple">
+						<button class="swiper-outer-wrapper__button button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-slide">
-						<img class="swiper-container__img" src="img/repairMarks/ViewSonic.svg" alt="Логотип ViewSonic">
-						<button class="swiper-container__button button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-slide">
+						<img class="swiper-outer-wrapper__img" src="img/repairMarks/ViewSonic.svg" alt="Логотип ViewSonic">
+						<button class="swiper-outer-wrapper__button button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-slide">
-						<img class="swiper-container__img" src="img/repairMarks/Bosch.svg" alt="Логотип Bosch">
-						<button class="swiper-container__button button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-slide">
+						<img class="swiper-outer-wrapper__img" src="img/repairMarks/Bosch.svg" alt="Логотип Bosch">
+						<button class="swiper-outer-wrapper__button button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-slide">
-						<img class="swiper-container__img" src="img/repairMarks/HP.svg" alt="Логотип HP">
-						<button class="swiper-container__button button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-slide">
+						<img class="swiper-outer-wrapper__img" src="img/repairMarks/HP.svg" alt="Логотип HP">
+						<button class="swiper-outer-wrapper__button button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-slide">
-						<img class="swiper-container__img" src="img/repairMarks/Acer.svg" alt="Логотип Acer">
-						<button class="swiper-container__button button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-slide">
+						<img class="swiper-outer-wrapper__img" src="img/repairMarks/Acer.svg" alt="Логотип Acer">
+						<button class="swiper-outer-wrapper__button button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-slide">
-						<img class="swiper-container__img" src="img/repairMarks/Sony.svg" alt="Логотип Sony">
-						<button class="swiper-container__button button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-slide">
+						<img class="swiper-outer-wrapper__img" src="img/repairMarks/Sony.svg" alt="Логотип Sony">
+						<button class="swiper-outer-wrapper__button button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-slide">
-						<img class="swiper-container__img" src="img/repairMarks/Lenovo.svg" alt="Логотип Lenovo">
-						<button class="swiper-container__button button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-slide">
+						<img class="swiper-outer-wrapper__img" src="img/repairMarks/Lenovo.svg" alt="Логотип Lenovo">
+						<button class="swiper-outer-wrapper__button button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-slide">
-						<img class="swiper-container__img" src="img/repairMarks/Samsung.svg" alt="Логотип Samsung">
-						<button class="swiper-container__button button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-slide">
+						<img class="swiper-outer-wrapper__img" src="img/repairMarks/Samsung.svg" alt="Логотип Samsung">
+						<button class="swiper-outer-wrapper__button button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-slide">
-						<img class="swiper-container__img" src="img/repairMarks/Apple.svg" alt="Логотип Apple">
-						<button class="swiper-container__button button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-slide">
+						<img class="swiper-outer-wrapper__img" src="img/repairMarks/Apple.svg" alt="Логотип Apple">
+						<button class="swiper-outer-wrapper__button button" type="button"></button>
 					</div>
 				</div>
-				<div class="swiper-container__swiper-pagination swiper-pagination"></div>
+				<div class="swiper-outer-wrapper__swiper-pagination swiper-pagination"></div>
 			</div>
 
 			<button class="button button__deploy button__deploy--hidden button__deploy-swiper">Показать все</button>
@@ -145,58 +147,60 @@
 		
 <!-- Ремонт различных видов техники -->
 		
-		<div class="main__modal-container modal-container modal-swiper">
+		<div class="main__modal-wrapper modal-wrapper modal-swiper">
 	
-			<h3 class="modal-container__header">Ремонт различных видов техники</h3>
+			<h3 class="modal-wrapper__header">
+				<span class="modal-wrapper__header-span">Ремонт различных видов техники</span>
+			</h3>
 
-			<div class="modal-container__swiper-container modal-container__swiper-container--tall swiper-container">
-				<div class="swiper-container__swiper-wrapper swiper-container__swiper-wrapper--hidden swiper-wrapper">
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tall swiper-slide">
-						<span class="swiper-container__text">Ремонт ноутбуков</span> 
-						<button class="swiper-container__button swiper-container__button--tall button" type="button"></button>
+			<div class="modal-wrapper__swiper-outer-wrapper modal-wrapper__swiper-outer-wrapper--tall swiper-outer-wrapper swiper-container">
+				<div class="swiper-outer-wrapper__swiper-wrapper swiper-outer-wrapper__swiper-wrapper--hidden swiper-wrapper">
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tall swiper-slide">
+						<span class="swiper-outer-wrapper__text">Ремонт ноутбуков</span> 
+						<button class="swiper-outer-wrapper__button swiper-outer-wrapper__button--tall button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tall swiper-slide">
-						<span class="swiper-container__text">Ремонт планшетов </span>
-						<button class="swiper-container__button swiper-container__button--tall button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tall swiper-slide">
+						<span class="swiper-outer-wrapper__text">Ремонт планшетов </span>
+						<button class="swiper-outer-wrapper__button swiper-outer-wrapper__button--tall button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tall swiper-slide">
-						<span class="swiper-container__text">Ремонт ПК </span>
-						<button class="swiper-container__button swiper-container__button--tall button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tall swiper-slide">
+						<span class="swiper-outer-wrapper__text">Ремонт ПК </span>
+						<button class="swiper-outer-wrapper__button swiper-outer-wrapper__button--tall button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tall swiper-slide">
-						<span class="swiper-container__text">Ремонт  мониторов </span>
-						<button class="swiper-container__button swiper-container__button--tall button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tall swiper-slide">
+						<span class="swiper-outer-wrapper__text">Ремонт  мониторов </span>
+						<button class="swiper-outer-wrapper__button swiper-outer-wrapper__button--tall button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tall swiper-slide">
-						<span class="swiper-container__text">Опять ремонт ноутбуков</span>
-						<button class="swiper-container__button swiper-container__button--tall button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tall swiper-slide">
+						<span class="swiper-outer-wrapper__text">Опять ремонт ноутбуков</span>
+						<button class="swiper-outer-wrapper__button swiper-outer-wrapper__button--tall button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tall swiper-slide">
-						<span class="swiper-container__text">Опять ремонт планшетов</span>
-						<button class="swiper-container__button swiper-container__button--tall button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tall swiper-slide">
+						<span class="swiper-outer-wrapper__text">Опять ремонт планшетов</span>
+						<button class="swiper-outer-wrapper__button swiper-outer-wrapper__button--tall button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tall swiper-slide">
-						<span class="swiper-container__text">Опять ремонт ПК</span>
-						<button class="swiper-container__button swiper-container__button--tall button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tall swiper-slide">
+						<span class="swiper-outer-wrapper__text">Опять ремонт ПК</span>
+						<button class="swiper-outer-wrapper__button swiper-outer-wrapper__button--tall button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tall swiper-slide">
-						<span class="swiper-container__text">Опять ремонт мониторов</span>
-						<button class="swiper-container__button swiper-container__button--tall button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tall swiper-slide">
+						<span class="swiper-outer-wrapper__text">Опять ремонт мониторов</span>
+						<button class="swiper-outer-wrapper__button swiper-outer-wrapper__button--tall button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tall swiper-slide">
-						<span class="swiper-container__text">Ещё ремонт ноутбуков</span>
-						<button class="swiper-container__button swiper-container__button--tall button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tall swiper-slide">
+						<span class="swiper-outer-wrapper__text">Ещё ремонт ноутбуков</span>
+						<button class="swiper-outer-wrapper__button swiper-outer-wrapper__button--tall button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tall swiper-slide">
-						<span class="swiper-container__text">Ещё ремонт планшетов</span>
-						<button class="swiper-container__button swiper-container__button--tall button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tall swiper-slide">
+						<span class="swiper-outer-wrapper__text">Ещё ремонт планшетов</span>
+						<button class="swiper-outer-wrapper__button swiper-outer-wrapper__button--tall button" type="button"></button>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tall swiper-slide">
-						<span class="swiper-container__text">Ещё ремонт ПК</span>
-						<button class="swiper-container__button swiper-container__button--tall button" type="button"></button>
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tall swiper-slide">
+						<span class="swiper-outer-wrapper__text">Ещё ремонт ПК</span>
+						<button class="swiper-outer-wrapper__button swiper-outer-wrapper__button--tall button" type="button"></button>
 					</div>
 				</div>
-				<div class="swiper-container__swiper-pagination swiper-pagination"></div>
+				<div class="swiper-outer-wrapper__swiper-pagination swiper-pagination"></div>
 			</div>
 
 			<button class="button button__deploy button__deploy--hidden button__deploy-swiper">Показать все</button>
@@ -205,97 +209,99 @@
 		
 <!-- Цены на услуги -->
 	
-		<div class="main__modal-container modal-container">
+		<div class="main__modal-wrapper modal-wrapper">
 	
-			<h3 class="modal-container__header">Цены на услуги</h3>
+			<h3 class="modal-wrapper__header">
+				<span class="modal-wrapper__header-span">Цены на услуги</span>
+			</h3>
 
-			<div class="modal-container__swiper-container swiper-container modal-container__swiper-container--table">
-				<div class="swiper-container__swiper-wrapper swiper-container__swiper-wrapper--hidden swiper-container__table swiper-wrapper">
-					<div class="modal-container__table-th">
-						<span class="swiper-container__text swiper-container__text--th">Ремонтные услуги</span> 
-						<span class="swiper-container__text swiper-container__text--th">Цена</span>
-						<span class="swiper-container__text swiper-container__text--th">Срок</span>
-						<span class="swiper-container__text swiper-container__text--th"></span>
+			<div class="modal-wrapper__swiper-outer-wrapper swiper-outer-wrapper modal-wrapper__swiper-outer-wrapper--table swiper-container">
+				<div class="swiper-outer-wrapper__swiper-wrapper swiper-outer-wrapper__swiper-wrapper--hidden swiper-outer-wrapper__table swiper-wrapper">
+					<div class="modal-wrapper__table-th">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--th">Ремонтные услуги</span> 
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--th">Цена</span>
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--th">Срок</span>
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--th"></span>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tr swiper-slide">
-						<span class="swiper-container__text swiper-container__text--td swiper-container__text--borderRadius-topLeft" data-title="Ремонтные услуги">
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tr swiper-slide">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td swiper-outer-wrapper__text--borderRadius-topLeft" data-title="Ремонтные услуги">
 							Диагностика
 						</span>
-						<span class="swiper-container__text swiper-container__text--td" data-title="Цена">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td" data-title="Цена">
 							Бесплатно
 						</span>
-						<span class="swiper-container__text swiper-container__text--td" data-title="Срок">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td" data-title="Срок">
 							30 мин
 						</span>
-						<span class="swiper-container__btn--td swiper-container__btn--borderRadius-topRight">
+						<span class="swiper-outer-wrapper__btn--td swiper-outer-wrapper__btn--borderRadius-topRight">
 							<button class="button button--oval" type="button">Заказать</button>
 						</span>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tr swiper-slide">
-						<span class="swiper-container__text swiper-container__text--td" data-title="Ремонтные услуги">
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tr swiper-slide">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td" data-title="Ремонтные услуги">
 							Замена дисплея
 						</span>
-						<span class="swiper-container__text swiper-container__text--td" data-title="Цена">
+						<span class="swiper-outer-wrapperr__text swiper-outer-wrapper__text--td" data-title="Цена">
 							1 000 ₽
 						</span>
-						<span class="swiper-container__text swiper-container__text--td" data-title="Срок">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td" data-title="Срок">
 							30-120 мин
 						</span>
-						<span class="swiper-container__btn--td">
+						<span class="swiper-outer-wrapper__btn--td">
 							<button class="button button--oval" type="button">Заказать</button>
 						</span>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tr swiper-slide">
-						<span class="swiper-container__text swiper-container__text--td" data-title="Ремонтные услуги">
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tr swiper-slide">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td" data-title="Ремонтные услуги">
 							Замена полифонического динамика
 						</span>
-						<span class="swiper-container__text swiper-container__text--td" data-title="Цена">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td" data-title="Цена">
 							1 000 ₽
 						</span>
-						<span class="swiper-container__text swiper-container__text--td" data-title="Срок">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td" data-title="Срок">
 							30-120 мин
 						</span>
-						<span class="swiper-container__btn--td">
+						<span class="swiper-outer-wrapper__btn--td">
 							<button class="button button--oval" type="button">Заказать</button>
 						</span>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tr swiper-slide">
-						<span class="swiper-container__text swiper-container__text--td" data-title="Ремонтные услуги">
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tr swiper-slide">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td" data-title="Ремонтные услуги">
 							Тестирование с выдачей технического заключения
 						</span>		
-						<span class="swiper-container__text swiper-container__text--td" data-title="Цена">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td" data-title="Цена">
 							1 000 ₽
 						</span>	
-						<span class="swiper-container__text swiper-container__text--td" data-title="Срок">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td" data-title="Срок">
 							30-120 мин
 						</span>
-						<span class="swiper-container__btn--td">
+						<span class="swiper-outer-wrapper__btn--td">
 							<button class="button button--oval" type="button">Заказать</button>
 						</span>
 					</div>
-					<div class="swiper-container__swiper-slide swiper-container__swiper-slide--tr swiper-slide">
-						<span class="swiper-container__text swiper-container__text--td swiper-container__text--td-last swiper-container__text--borderRadius-bottomLeft" data-title="Ремонтные услуги">
+					<div class="swiper-outer-wrapper__swiper-slide swiper-outer-wrapper__swiper-slide--tr swiper-slide">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td swiper-outer-wrapper__text--td-last swiper-outer-wrapper__text--borderRadius-bottomLeft" data-title="Ремонтные услуги">
 							Замена программного обеспечения
 						</span>			
-						<span class="swiper-container__text swiper-container__text--td swiper-container__text--td-last" data-title="Цена">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td swiper-outer-wrapper__text--td-last" data-title="Цена">
 							1 000 ₽
 						</span>		
-						<span class="swiper-container__text swiper-container__text--td swiper-container__text--td-last" data-title="Срок">
+						<span class="swiper-outer-wrapper__text swiper-outer-wrapper__text--td swiper-outer-wrapper__text--td-last" data-title="Срок">
 							30-120 мин
 						</span>
-						<span class="swiper-container__btn--td swiper-container__btn--td-last swiper-container__btn--borderRadius-bottomRight">
+						<span class="swiper-outer-wrapper__btn--td swiper-outer-wrapper__btn--td-last swiper-outer-wrapper__btn--borderRadius-bottomRight">
 							<button class="button button--oval" type="button">Заказать</button>
 						</span>
 					</div>
 				</div>
-				<div class="swiper-container__swiper-pagination swiper-pagination"></div>
+				<div class="swiper-outer-wrapper__swiper-pagination swiper-pagination"></div>
 			</div>
 			
-			<p class="modal-container__text">
+			<p class="modal-wrapper__text">
 				Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
 			</p>
 			
-			<button class="button button__deploy button__commertial-proposal">
+			<button class="button button__commertial-proposal">
 				Получить коммерческое предложение
 			</button>
 
@@ -305,7 +311,7 @@
      
 <!-- footer -->
    
-   <footer class="footer">
+   <footer class="footer header-main-footer-wrapper__out-wrapper">
    	<p class="footer__text">
    		© 2019 CPS<br>
 			Разработано командой Apesong 
@@ -321,17 +327,17 @@
    
 <!-- Меню из блока 1.4 -->
    
-   <aside class="modal-menu">
-   	<div class="modal-menu__headerAndMenuContainer">
+   <div class="modal-menu modal-menues">
+   	<div class="modal-menu__header-menu-wrapper">
 			<div class="modal-menu__header">
-				<div class="modal-menu__headerAndMenuButtons-container">
-					<button class="headerAndMenuButtons headerAndMenuButtons--close modal-menu__headerAndMenuButtons--hidden button" type="button"></button>
+				<div class="modal-menu__primary-buttons-wrapper">
+					<button class="primary-buttons primary-buttons--close modal-menu__primary-buttons--hidden button" type="button"></button>
 					<img class="modal-menu__logo" src="img/Group.svg" alt="Логотип CPS">
 				</div>
-				<button class="headerAndMenuButtons headerAndMenuButtons--search button" type="button"></button>
+				<button class="primary-buttons primary-buttons--search button" type="button"></button>
 			</div>
 
-			<div class="modal-menu__menu-container">
+			<div class="modal-menu__menu-wrapper">
 				<ul class="modal-menu__list">
 					<li class="modal-menu__item">
 						<a href="#" class="modal-menu__link">Ремонт техники</a>
@@ -362,27 +368,27 @@
 		</div>
 		
 		<div class="modal-menu__footer">
-			<div class="modal-menu__buttons-container">
-				<button class="headerAndMenuButtons headerAndMenuButtons--call modal-menu__headerAndMenuButtons button" type="button"></button>
-				<button class="headerAndMenuButtons headerAndMenuButtons--chat modal-menu__headerAndMenuButtons button" type="button"></button>
-				<button class="headerAndMenuButtons headerAndMenuButtons--profile modal-menu__headerAndMenuButtons button" type="button"></button>
+			<div class="modal-menu__buttons-wrapper">
+				<button class="primary-buttons primary-buttons--call modal-menu__primary-buttons button" type="button"></button>
+				<button class="primary-buttons primary-buttons--chat modal-menu__primary-buttons button" type="button"></button>
+				<button class="primary-buttons primary-buttons--profile modal-menu__primary-buttons button" type="button"></button>
 			</div>
 			<a class="modal-menu__email" href="mailto:mail@cps.com">mail@cps.com</a>
 			<a class="modal-menu__tel" href="tel:+88008908900">8 800 890 8900</a>
-			<div class="modal-menu__lang-container">
+			<div class="modal-menu__lang-wrapper">
 				<span class="modal-menu__lang-item modal-menu__lang-item--active">RU</span>
 				<span class="modal-menu__lang-item">EN</span>
 				<span class="modal-menu__lang-item">CH</span>
 			</div>
 		</div>
 
-	</aside>
+	</div>
   
 <!-- Меню feedback -->
  
- 	<aside class="modal-menuFeedback modal-feedback">
- 		<div class="modal-menuFeedback__headerAndMenuButtons-container">
-			<button class="headerAndMenuButtons headerAndMenuButtons--close modal-menuFeedback__buttonClose button" type="button"></button>
+ 	<div class="modal-menuFeedback modal-feedback modal-menues">
+ 		<div class="modal-menuFeedback__primary-buttons-wrapper">
+			<button class="primary-buttons primary-buttons--close modal-menuFeedback__buttonClose button" type="button"></button>
 		</div>
  		<h2 class="modal-menuFeedback__h2">Обратная связь</h2>
  		<form class="modal-menuFeedback__form" action="" method="get">
@@ -395,13 +401,13 @@
  			Нажимая “отправить”, вы даете согласие на <a class="modal-menuFeedback__agreement--attention" href="" alt="Согласие на обработку">обработку персональных данных</a> и соглашаетесь с нашей <a class="modal-menuFeedback__agreement--attention" href="" alt="Политика конфиденциальности">политикой конфиденциальности</a>
  		</p>
  		<button class="button button--oval modal-menuFeedback__button" type="button">Отправить</button>
- 	</aside>
+ 	</div>
   
 <!-- Меню call -->
   
-  <aside class="modal-menuFeedback modal-call">
-  	<div class="modal-menuFeedback__headerAndMenuButtons-container">
-			<button class="headerAndMenuButtons headerAndMenuButtons--close modal-menuFeedback__buttonClose button" type="button"></button>
+  <div class="modal-menuFeedback modal-call modal-menues">
+  	<div class="modal-menuFeedback__primary-buttons-wrapper">
+			<button class="primary-buttons primary-buttons--close modal-menuFeedback__buttonClose button" type="button"></button>
 		</div>
  		<h2 class="modal-menuFeedback__h2">Заказать звонок</h2>
  		<form class="modal-menuFeedback__form" action="" method="get">
@@ -411,7 +417,10 @@
  			Нажимая “отправить”, вы даете согласие на <a class="modal-menuFeedback__agreement--attention" href="" alt="Согласие на обработку">обработку персональных данных</a> и соглашаетесь с нашей <a class="modal-menuFeedback__agreement--attention" href="" alt="Политика конфиденциальности">политикой конфиденциальности</a>
  		</p>
  		<button class="button button--oval modal-menuFeedback__button" type="button">Отправить</button>
-	</aside>
+	</div>
+	
+	<div class="blur-wrapper">
+	</div>
 
 </body>
 </html>

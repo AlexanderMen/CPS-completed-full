@@ -1,48 +1,52 @@
-.headerAndMenuButtons {
-	margin-left: 16px;
+.primary-buttons {
 	width: 40px;
 	height: 40px;
+	flex-shrink: 0;
 	border-radius: 20px;
 	background: $headerAndMenuButtonsColor;
 	background-repeat: no-repeat;
 	background-position: center;
 	transition: 0.5s;
 }
+
+.primary-buttons--header-btn {
+	margin-left: 16px;
+}
 	
-.headerAndMenuButtons--hidden {
+.primary-buttons--hidden {
 	display: none;
 }
 
 @media screen and (min-width: 768px) {
-	.headerAndMenuButtons--hidden {
+	.primary-buttons--hidden {
 		display: inline-block;
 	}
 }
 
-.headerAndMenuButtons--close {
+.primary-buttons--close {
 	background-image: url(../img/close.svg);
 	margin-left: 0;
 }
 
-.headerAndMenuButtons--close:hover {
+.primary-buttons--close:hover {
 	transform: rotate(180deg);
 	opacity: 0.5;
 }
 
-.headerAndMenuButtons--search {
+.primary-buttons--search {
 	background-image: url(../img/search.svg);
 }
 
-.headerAndMenuButtons--search:hover {
+.primary-buttons--search:hover {
 	transform: scale(2);
 	opacity: 0.5;
 }
 
-.headerAndMenuButtons--call {
+.primary-buttons--call {
 	background-image: url(../img/call.svg);
 }
 
-.headerAndMenuButtons--call:hover {
+.primary-buttons--call:hover {
 	animation-name: rotation;
   animation-duration: 0.5s;
 	filter: contrast(2);
@@ -66,54 +70,54 @@
   	}
 	}
 
-.headerAndMenuButtons--burger,
-.headerAndMenuButtons--repair,
-.headerAndMenuButtons--checkstatus {
+.primary-buttons--burger,
+.primary-buttons--repair,
+.primary-buttons--checkstatus {
 	transition: 0.35s;
 }
 
-.headerAndMenuButtons--burger:hover,
-.headerAndMenuButtons--repair:hover,
-.headerAndMenuButtons--checkstatus:hover {
+.primary-buttons--burger:hover,
+.primary-buttons--repair:hover,
+.primary-buttons--checkstatus:hover {
 	box-shadow: 0 0 4px 2px;
 }
 
-.headerAndMenuButtons--burger {
+.primary-buttons--burger {
 	background-image: url(../img/burger.svg);
 	margin: 0;
 }
 
-.headerAndMenuButtons--chat {
+.primary-buttons--chat {
 	background-image: url(../img/chat.svg);
 }
 
-.headerAndMenuButtons--chat:hover {
+.primary-buttons--chat:hover {
 	filter: blur(2px);
 	transform: scale(0.8);
 }
 
-.headerAndMenuButtons--profile {
+.primary-buttons--profile {
 	background-image: url(../img/profile.svg);
 }
 
-.headerAndMenuButtons--profile:hover {
+.primary-buttons--profile:hover {
 	filter: drop-shadow(1px 1px 4px black);
 }
 
-.headerAndMenuButtons--repair {
+.primary-buttons--repair {
 	background-image: url(../img/repair.svg);
 }
 
-.headerAndMenuButtons--checkstatus {
+.primary-buttons--checkstatus {
 	background-image: url(../img/checkstatus.svg);
 }
 
-.headerAndMenuButtons--dividerBefore {
+.primary-buttons--dividerBefore {
 	position: relative;
 	margin-left: 42px;
 }
 
-.headerAndMenuButtons--dividerBefore::before {
+.primary-buttons--dividerBefore::before {
 	content: url(../img/devider.svg);
 	position: absolute;
 	top: 50%;

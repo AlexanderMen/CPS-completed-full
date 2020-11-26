@@ -1,0 +1,101 @@
+.modal-wrapper {
+	width: 100%;
+	
+	&__header {
+		margin: 0 -16px;
+		padding: 16px;
+		padding-left: 0;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+		text-transform: uppercase;
+		color: $mainMenuTextColor;
+		border-top: solid 1px $sectionDivider;
+		background: linear-gradient(-270deg, $mainBg 0%, $menuItemBg 98.61%);
+	}
+	
+	@media screen and (min-width: 768px) {
+		&__header {
+			margin: 0 -24px;
+		}
+	}
+	
+	@media screen and (min-width: 1366px) {
+		&__header {
+			margin: 0 -34px;
+		}
+	}
+	
+	&__header-span {
+		display: inline-block;
+		padding: 0 16px;
+	}
+	
+	@media screen and (min-width: 768px) {
+		&__header-span {
+			padding: 0 24px;
+		}
+	}
+	
+	@media screen and (min-width: 1366px) {
+		&__header-span {
+			padding: 0 32px;
+		}
+	}
+	
+	&__swiper-outer-wrapper {
+		width: 100%;
+		height: 125px;
+		background: $mainBg;
+	}
+	
+	&__swiper-outer-wrapper--tall {
+		height: 213px;
+	}
+	
+	&__swiper-outer-wrapper--table {
+		height: 253px;
+	}
+
+	@media screen and (min-width: 768px) {
+		&__swiper-outer-wrapper {
+			width: auto;
+			height: auto;
+			margin: 24px auto 8px auto;
+		}
+	}
+	
+	@media screen and (max-width: 767px) {
+		&__swiper-outer-wrapper::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 10px;
+			z-index: 2;
+			width: 24px;
+			height: 81px;
+			background: linear-gradient(270deg, $mainBg 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+		}
+		
+		&__swiper-outer-wrapper--tall::before {
+			height: 169px;
+		}
+		
+		&__swiper-outer-wrapper--table::before {
+			height: 209px;
+		}
+	}
+
+	&__text {
+		margin-top: 0;
+		margin-bottom: 16px;
+	}
+
+	@media screen and (min-width: 768px) {
+		&__text {
+			width: 421px;
+		}
+	}
+}
+
+

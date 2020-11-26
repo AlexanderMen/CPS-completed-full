@@ -4,13 +4,13 @@
 
 @import './body';
 
-@import './blocks/header-main-footer-container';
+@import './blocks/header-main-footer-wrapper';
 
 @import './blocks/button';
 
 @import './blocks/header';
 
-@import './blocks/headerAndMenuButtons';
+@import './blocks/primary-buttons';
 
 @import './blocks/main';
 
@@ -18,12 +18,14 @@
 
 @import './blocks/about-company';
 
-@import './blocks/modal-container';
+@import './blocks/modal-wrapper';
 
-@import './blocks/swiper-container';
+@import './blocks/swiper-outer-wrapper';
 
 @import './blocks/footer';
 
 @import './blocks/modal-menu';
 
 @import './blocks/modal-menuFeedback';
+
+@import './blocks/blur-wrapper';

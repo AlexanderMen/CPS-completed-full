@@ -6,13 +6,9 @@ import '../scss/style.scss';
 
 import {getTextHidden} from './about-company.js';
 
-import {getSwiperSlideHidden} from './swiper-container.js';
+import {getSwiperSlideHidden} from './swiper-outer-wrapper.js';
 
 import {getModalMenu} from './modal-menu.js';
-
-import {getFeedbackMenu} from './modal-feedback.js';
-
-import {getCallMenu} from './modal-call.js';
 
 Swiper.use(Pagination);
 
@@ -33,10 +29,6 @@ getTextHidden();
 getSwiperSlideHidden();
 
 getModalMenu();
-
-getFeedbackMenu();
-
-getCallMenu();
 
 
 

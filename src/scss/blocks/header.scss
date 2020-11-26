@@ -1,32 +1,27 @@
 .header {
 	display: flex;
 	width: 100%;
+	padding-top: 19px;
+	padding-bottom: 17px;
 	border-bottom: $sectionDivider 1px solid;
+	background: $menuItemBg;
 	justify-content: space-between;
 	
-	.header__group-of-buttons {
+	&__group-of-buttons {
 		display: flex;
-		padding: 17px 24px 17px 16px;
 		align-items: center;
 	}
 	
-	@media screen and (min-width: 768px) {
-	
-		.header__group-of-buttons {
-			padding-left: 24px;
-		}
-	}
-	
-	.header__logo-container {
+	&__logo-wrapper {
 		position: relative;
 		margin-left: 16px;
 	}
 	
 	@media screen and (min-width: 768px) {
-		.header__logo-container {
+		&__logo-wrapper {
 			margin-left: 42px;
 		}
-		.header__logo-container::after {
+		&__logo-wrapper::after {
 			content: url(../img/devider.svg);
 			position: absolute;
 			top: 50%;
@@ -40,4 +35,8 @@
 	.header {
 		display: none;
 	}
+}
+
+.header__top-margin {
+	margin-top: -19px;
 }

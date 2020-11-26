@@ -8,3 +8,17 @@ body {
 	letter-spacing: 0.2px;
 	color: $mainTextColor;
 }
+
+@media screen and (min-width: 1366px) {
+	body {
+		display: grid;
+		grid-template-columns: 320px auto;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+}

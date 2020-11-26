@@ -1,0 +1,26 @@
+.blur-wrapper {
+	display: none;
+}
+
+.blur-wrapper--blured {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 500;
+	background-color: $menuItemBg;
+}
+
+@media screen and (min-width: 768px) {
+	.blur-wrapper--blured {
+		opacity: 0.93;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.blur-wrapper--overflow-hidden {
+		overflow: hidden;
+	}
+}

@@ -1,29 +1,38 @@
 .modal-menuFeedback {
 	position: absolute;
-	top: -700px;
+	top: -950px;
 	right: 50%;
 	transform: translateX(50%);
-	width: 320px;
+	height: 100%;
+	max-width: 320px;
+	width: 100%;
 	z-index: 102;
-	padding: 24px 16px 75px;
+	padding: 24px 16px;
 	background-color: $menuItemBg;
 	box-sizing: border-box;
+	z-index: 501;
 	transition: 0.65s;
 	
-	.modal-menuFeedback__headerAndMenuButtons-container {
+	&__primary-buttons-wrapper {
 		position: relative;
 		margin-bottom: 32px;
 	}
 	
 	@media screen and (min-width: 1366px) {
-		.modal-menuFeedback__buttonClose {
+		&__primary-buttons-wrapper {
+			margin-bottom: 0;
+		}
+	}
+	
+	@media screen and (min-width: 1366px) {
+		&__buttonClose {
 			position: absolute;
-			top: 25px;
+			top: -7px;
 			left: -97px;
 		}
 	}
 	
-	.modal-menuFeedback__h2 {
+	&__h2 {
 		position: relative;
 		font-family: 'TT Lakes Bold';
 		font-size: 24px;
@@ -32,7 +41,7 @@
 		margin: 0 0 24px 0;
 	}
 	
-	.modal-menuFeedback__h2::before {
+	&__h2::before {
 		content: '';
 		position: absolute;
 		bottom: 0;
@@ -44,17 +53,17 @@
 	}
 	
 	@media screen and (min-width: 1366px) {
-		.modal-menuFeedback__h2::before {
+		&__h2::before {
 			left: -32px;
 		}
 	}
 	
-	.modal-menuFeedback__form {
+	&__form {
 		margin-bottom: 16px;
 	}
 	
-	.modal-menuFeedback__input,
-	.modal-menuFeedback__textarea {
+	&__input,
+	&__textarea {
 		width: 100%;
 		height: 48px;
 		margin-bottom: 16px;
@@ -68,41 +77,41 @@
 		letter-spacing: -0.2px;
 	}
 	
-	.modal-menuFeedback__input:focus,
-	.modal-menuFeedback__textarea:focus {
+	&__input:focus,
+	&__textarea:focus {
 		outline: none;
 	}
 	
-	.modal-menuFeedback__textarea {
+	&__textarea {
 		height: 118px;
 		margin-bottom: 0;
 		padding-top: 12px;
 		resize: none;
 	}
 	
-	.modal-menuFeedback__agreement {
+	&__agreement {
 		margin: 0 0 19px;
 		line-height: 16px;
 		letter-spacing: 0;
 	}
 	
-	.modal-menuFeedback__agreement--attention {
+	&__agreement--attention {
 		color: $headerAndMenuButtonsColor;
 		cursor: pointer;
 		text-decoration: none;
 	}
 	
-	.modal-menuFeedback__agreement--attention:hover {
+	&__agreement--attention:hover {
 		opacity: 0.6;
 	}
 	
-	.modal-menuFeedback__button {
+	&__button {
 		position: relative;
 		left: 168px;
 	}
 	
 	@media screen and (min-width: 1366px) {
-		.modal-menuFeedback__button {
+		&__button {
 			left: 255px;
 		}
 	}
@@ -112,12 +121,13 @@
 	.modal-menuFeedback {
 		right: 0;
 		transform: translateX(0);
+		box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
 	}
 }
 
 @media screen and (min-width: 1366px) {
 	.modal-menuFeedback {
-		width: 440px;
+		max-width: 440px;
 		padding: 40px 32px;
 	}
 }
